@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro de Perguntas</title>
+        <link rel="stylesheet" type="text/css" href="model/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="model/angularjs/angular.js"></script>
+
+        <script>
+            angular.module("cadastrarPerguntas", []);
+            angular.module("cadastrarPerguntas").controller("cadastrarPerguntasCtrl", function ($scope){
+                $scope.app = "Cadastar Perguntas";
+                $scope.adicionarPergunta = function(pergunta) {
+                    $scope.perguntas.push(angular.copy(pergunta));
+                    delete $scope.pergunta;
+                }
+            });
+        </script>
+    </head>
+    <body ng-controller="cadastrarPerguntasCtrl" style="background-color: black;">
+        <div class="container2">
+            <h2 style="text-align: center;">QPJe</h2>
+        </div>
+        <div class="container">
+            <h3>Cadastrar Pergunta</h3>
+            <hr/>
+            <h4 type="text" style="text-align: left;">Nome:</h4>
+            <input class="form-control" type="text" ng-model="pergunta.nome" placeholder="Nome" />
+            <h4 type="text" style="text-align: left;">E-mail:</h4>
+            <input class="form-control" type="text" ng-model="pergunta.email" placeholder="E-mail" />
+            <h4 type="text" style="text-align: left;">Pergunta:</h4>
+            <textarea class="form-control" type="text" rows="6" cols="92" placeholder=" Escreva seu Resumo..."></textarea><br />
+            <button style="float: right;" class="btn btn-primary" ng-click="adicionarPergunta(pergunta)">Enviar Pergunta</button>
+        </div>
+        <div class="container3">
+            <h5 style="text-align: center;">QPJe/2016</h5>
+        </div>
+    </body>
+</html>
+
