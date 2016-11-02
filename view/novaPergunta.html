@@ -1,0 +1,29 @@
+
+        <h3 style="text-align: center;">{{app}}</h3>
+            {{message}}
+        <hr/>
+
+        <form name="perguntaForm" name="perguntaForm" style="aling: center" >
+            <div>
+              <h4 style="text-align: left;">Nome:</h4>
+              <input class="form-control" type="text" ng-model="pergunta.nome" name="nome" placeholder="Nome" ng-required="true"/>
+              <div ng-show="perguntaForm.nome.$error.required && perguntaForm.nome.$dirty" class="alert alert-danger">
+                  Por favor, preencha o campo nome!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">E-mail:</h4>
+              <input class="form-control" type="text" ng-model="pergunta.mail" name="mail" placeholder="E-mail" ng-required="true" />
+              <div ng-show="perguntaForm.mail.$error.required && perguntaForm.mail.$dirty" class="alert alert-danger">
+              Por favor, preencha o campo e-mail!
+              </div>
+            </div>
+        </form>
+      </div>
+      <h4 style="text-align: left;">Pergunta:</h4>
+      <textarea class="form-control" type="text" rows="6" cols="92" ng-model="pergunta.pergunte" placeholder="Escreva sua pergunta..."></textarea>
+      <hr/>
+      <button style="float: right;" class="btn btn-primary" ng-click="adicionarPergunta(pergunta)" ng-disabled="perguntaForm.$invalid">Enviar Pergunta</button>
+
+
+

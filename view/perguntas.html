@@ -1,0 +1,22 @@
+
+
+            <div class="one2">
+                <table ng-show="perguntas.length > 0" class="one2">
+
+                    <tr style="width: 50px;">
+                        <th style="text-align: left;">Lista das Perguntas:</th>
+
+
+                    </tr>
+
+                    <tr ng-class="{'selecionado negrito': pergunta.selecionado}" ng-repeat="pergunta in perguntas | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+
+                        <td style="text-align: center;">Nome: {{pergunta.nome }}<br/><br/> Pergunta: {{pergunta.pergunte}}<br/><br/>
+                        <a href="detalhes.html#detalhesPergunta/{{pergunta.id}}"><button class="btn2 btn-primary" style="float: center;" >Detalhes</button></a>
+                                <a href="responderpergunta.html#/respostas/{{pergunta.id}}"><button class="btn2 btn-primary" style="float: center;" >Responder</button></a></td>
+
+                    </tr>
+
+                </table>
+            </div>
+

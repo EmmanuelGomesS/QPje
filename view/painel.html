@@ -1,0 +1,20 @@
+
+
+            <div class="one">
+                <table ng-show="usuarios.length > 0" class="one">
+
+                    <tr style="width: 50px;">
+                        <th style="text-align: left;">Meu Painel: </th>
+                    </tr>
+
+                    <tr ng-class="{'selecionado negrito': usuario.selecionado}" ng-repeat="usuario in usuarios | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                        <td style="text-align: center;">Nome: {{usuario.nome }}<br/><br/> E-mail: {{usuario.mail}}<br/><br/>
+                        OAB: {{usuario.oab}}<br/><br/> Estado: {{usuario.estado}}<br/><br/> Telefone: {{usuario.telefone}}<br/><br/>
+                        Telefone 2: {{usuario.telefone2}}<br/><br/>
+                        <a href="editar.html#/editarUsuario/{{usuario.id}}"><button class="btn2 btn-primary" style="float: center;" >Editar</button></a>
+                        <button class="btn2 btn-primary" ng-click="apagarUsuario(usuario.id)" style="float: center;" >Apagar</button></td>
+                    </tr>
+
+                </table>
+            </div>
+

@@ -1,0 +1,30 @@
+
+        <h3 style="text-align: center;">{{app}}</h3>
+            {{message}}
+        <hr/><br/>
+
+        <form name="perguntaForm" name="perguntaForm" style="aling: center" >
+            <div>
+              <h4 style="text-align: left;">OAB:</h4>
+              <input class="form-control" type="text" ng-model="login.oab" name="oab" placeholder="Número de sua OAB..." ng-required="true" />
+              <div ng-show="perguntaForm.oab.$error.required && perguntaForm.oab.$dirty" class="alert alert-danger">
+              Por favor, insira sua inscrição na OAB!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Senha:</h4>
+              <input class="form-control" type="text" ng-model="login.senha" name="senha" placeholder="Sua senha..." ng-required="true"/>
+              <div ng-show="perguntaForm.senha.$error.required && perguntaForm.senha.$dirty" class="alert alert-danger">
+                  Por favor, coloque sua senha para logar-se!
+              </div>
+            </div><br/>
+            <hr/>
+        </form>
+        <a href="painelusuario.html#painel/{{login.oab}}"><button style="float: right;"  class="btn btn-primary" ng-click="adicionarLogin(login); carregarPainel(login.oab)" ng-disabled="perguntaForm.$invalid">Logar-se</button></a>
+      </div>
+      <a href="cadastrarusuario.html#/novoUsuario"><h5 style="text-align: left;">cadastrar-se</h5></a>
+
+
+
+
+

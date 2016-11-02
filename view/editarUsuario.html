@@ -1,0 +1,67 @@
+
+        <h3 style="text-align: center;">Editar Usuário</h3>
+            {{message}}
+        <hr/>
+
+        <form name="perguntaForm" name="perguntaForm" style="aling: center" ng-repeat="usuario in usuarios">
+              <h4 style="text-align: left;">Nome:</h4>
+              <input class="form-control" type="text" ng-model="usuario.nome" name="nome" {{usuari.nome}} />
+              <div ng-show="perguntaForm.nome.$error.required && perguntaForm.nome.$dirty" class="alert alert-danger">
+                  Por favor, preencha o campo nome!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Sexo:</h4>
+              <h4 style="text-align: left;">
+              <input  type="radio" ng-model="usuario.sexo" name="sexo" value="M" {{usuario.sexo}} />  Masculino
+              <input  type="radio" ng-model="usuario.sexo" name="sexo" value="F" {{usuario.sexo}} />  Feminino
+              </h4>
+            </div>
+            <div>
+              <h4 style="text-align: left;">E-mail:</h4>
+              <input class="form-control" type="text" ng-model="usuario.mail" name="mail" {{usuario.mail}} />
+              <div ng-show="perguntaForm.mail.$error.required && perguntaForm.mail.$dirty" class="alert alert-danger">
+              Por favor, preencha o campo e-mail!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Senha:</h4>
+              <input class="form-control" type="password" id="senha" ng-model="usuario.senha" name="senha" {{usuario.senha}} />
+              <div ng-show="perguntaForm.senha.$error.required && perguntaForm.senha.$dirty" class="alert alert-danger">
+                  Por favor, preencha o campo com uma senha!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Nº da OAB:</h4>
+              <input class="form-control" type="text" ng-model="usuario.oab" name="oab" {{usuario.oab}} />
+              <div ng-show="perguntaForm.oab.$error.required && perguntaForm.oab.$dirty" class="alert alert-danger">
+                  Por favor, digite o número da sua OAB!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Estado:</h4>
+              <input class="form-control" type="text" ng-model="usuario.estado" name="estado" {{usuario.estado}} />
+            </div>
+            <div>
+              <h4 style="text-align: left;">Telefone:</h4>
+              <input class="form-control" type="text" ng-model="usuario.telefone" name="telefone" {{usuario.telefone}} ng-pattern="/^\d{2}\d{4,5}-\d{4}$/" />
+              <div ng-show="perguntaForm.telefone.$error.required && perguntaForm.telefone.$dirty" class="alert alert-danger">
+                  Por favor, preencha o campo com telefone para contato!
+              </div>
+              <div ng-show="perguntaForm.telefone.$error.pattern" class="alert alert-danger">
+                  O campo telefone deve ter o formato DD+DDDDD-DDDD!
+              </div>
+            </div>
+            <div>
+              <h4 style="text-align: left;">Telefone 2: (Opcional)</h4>
+              <input class="form-control" type="text" ng-model="usuario.telefone2" name="telefone2" {{usuario.telefone2}} ng-pattern="/^\d{2}\d{4,5}-\d{4}$/" />
+              <div ng-show="perguntaForm.telefone2.$error.pattern" class="alert alert-danger">
+                  O campo telefone deve ter o formato DD+DDDDD-DDDD!
+              </div>
+            </div>
+            <hr>
+            <button style="float: right;" class="btn btn-primary" ng-click="editaUsuario(usuario.id, usuario)" ng-disabled="perguntaForm.$invalid">Salvar Informações</button>
+        </form>
+      </div>
+      </hr>
+

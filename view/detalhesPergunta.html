@@ -1,0 +1,22 @@
+
+            <table ng-show="respostas.length > 0" class="one">
+                <tr style="width: 50px;">
+                    <th style="text-align: center;">Nome</th>
+                    <th style="text-align: center;">E-mail</th>
+                    <th style="text-align: center;">Resposta</th>
+                    <th style="text-align: center;">Ranking</th>
+                </tr>
+                <tr ng-class="{'selecionado negrito': resposta.selecionado}" ng-repeat="resposta in respostas | filter:criterioDeBusca | orderBy:'rating' ">
+                    <td style="text-align: center;">{{resposta.nome }}</td>
+                    <td style="text-align: center;">{{resposta.mail}}</td>
+                    <td style="text-align: center;" >{{resposta.resposta}}</td>
+                    <td>
+                        <div ng-init="rating = star.rating + carregarRating(resposta.id)"></div>
+                        <h5>Avaliação da resposta:
+                        <div class="star-rating" type="number" star-rating ng-model="rating.rating1" rating-value="rating"
+                        data-max="7" on-rating-selected="rateFunction(rating, resposta.id)" {{resposta.rating}}></div></h5>
+                    </td>
+                </tr>
+            </table>
+
+

@@ -1,0 +1,21 @@
+
+    <form name="perguntaForm">
+        <div>
+            <h4 style="text-align: left;">Nome:</h4>
+            <input class="form-control" type="text" ng-model="resposta.nome" name="nome" placeholder="Nome" ng-required="true"/>
+            <div ng-show="perguntaForm.nome.$error.required && perguntaForm.nome.$dirty" class="alert alert-danger">
+                Por favor, preencha o campo nome!
+            </div>
+        </div>
+        <div>
+            <h4 style="text-align: left;">E-mail:</h4>
+            <input class="form-control" type="text" ng-model="resposta.mail" name="mail" placeholder="E-mail" ng-required="true" />
+            <div ng-show="perguntaForm.mail.$error.required && perguntaForm.mail.$dirty" class="alert alert-danger">
+            Por favor, preencha o campo e-mail!
+            </div>
+        </div>
+    </form>
+    <h4 style="text-align: left;">Resposta:</h4>
+    <textarea class="form-control" type="text" rows="6" cols="92" name="resposta" ng-model="resposta.resposta" placeholder="Escreva a resposta!" ng-required="true"></textarea>
+    <hr/>
+    <button style="float: right;" class="btn btn-primary" ng-click="adicionarResposta(resposta)" ng-disabled="perguntaForm.$invalid">Enviar Resposta</button>
