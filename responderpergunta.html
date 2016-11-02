@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html ng-app="Qpje">
-
+<html ng-app="cadastrarPergunta">
     <head>
         <meta charset="UTF-8">
 
-        <title >QPJE - Início</title>
-
+        <title>QPJe - Cadastrar Perguntas</title>
         <link rel="stylesheet" type="text/css" href="model/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="model/angularjs/angular.js"></script>
+        <script src="model/angularjs/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controllers/cadastrarPerguntaCtrl.js"></script>
+        <script src="js/controllers/responderPerguntaCtrl.js"></script>
         <script src="js/controllers/detalhesPerguntaCtrl.js"></script>
         <script src="js/controllers/logarseCtrl.js"></script>
         <script src="js/services/perguntasAPIService.js"></script>
@@ -18,11 +19,12 @@
         <script src="js/config/routeConfig.js"></script>
 
     </head>
-    <body ng-controller="cadastrarPerguntaCtrl" style="background-color: white;">
-      <div class="menu-wrap">
-          <h2 style="text-align: center;" style="margin-top: 50px;"></h2>
+    <body ng-controller="cadastrarPerguntaCtrl">
 
-      </div>
+        <div class="menu-wrap">
+            <h2 style="text-align: center;" style="margin-top: 50px;"></h2>
+        </div>
+
         <div class="menu-wrap">
           <p style="text-align: left; ">
                   <img src="img/Qpje.png" style="width: 220px" id="center"/>
@@ -37,11 +39,17 @@
           </ul>
         </div>
       </div>
-        <div style="margin-top: 40px;">
-        <p style="text-align: center;">
-                <img src="img/foto2.png" style="width: 450px;" />
-        </p>
+
+
+        <div class="jumbotron5">
+            <h3 style="text-align: center;">Responder Pergunta</h3>
+            {{message}}
+            <hr/>
+
+            <div ng-view></div>
+
         </div>
+
         <div class="primary-footer">
           <div class="footer-wrap">
             <div class="footer">

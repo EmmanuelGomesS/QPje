@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 
-<html ng-app="Qpje">
-
+<html ng-app="cadastrarPergunta">
     <head>
         <meta charset="UTF-8">
 
-        <title >QPJE - Início</title>
-
+        <title>QPJe - Listar Usuários</title>
         <link rel="stylesheet" type="text/css" href="model/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="model/angularjs/angular.js"></script>
+        <script src="model/angularjs/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controllers/cadastrarPerguntaCtrl.js"></script>
         <script src="js/controllers/detalhesPerguntaCtrl.js"></script>
+        <script src="js/controllers/cadastrarUsuarioCtrl.js"></script>
+        <script src="js/controllers/exibirUsuarioCtrl.js"></script>
         <script src="js/controllers/logarseCtrl.js"></script>
         <script src="js/services/perguntasAPIService.js"></script>
         <script src="js/value/configValue.js"></script>
         <script src="js/config/routeConfig.js"></script>
 
     </head>
-    <body ng-controller="cadastrarPerguntaCtrl" style="background-color: white;">
+    <body>
       <div class="menu-wrap">
           <h2 style="text-align: center;" style="margin-top: 50px;"></h2>
-
       </div>
+
         <div class="menu-wrap">
           <p style="text-align: left; ">
                   <img src="img/Qpje.png" style="width: 220px" id="center"/>
@@ -30,18 +32,32 @@
         <div class="menu">
           <ul>
             <li><a href="home.html" class="active">Inicio</a></li>
-            <li><a href="listarperguntas.html#/perguntas/page/0">Listar Perguntas</a></li>
-            <li><a href="cadastrarperguntas.html#/novaPergunta">Fazer Pergunta</a></li>
-            <li><a href="preparandoAmbiente.html">Preparando Ambiente Pje</a></li>
+            <li><a href="listarusuarios.html#/usuario">Listar Usuários</a></li>
+            <li><a href="cadastrarusuario.html#/novoUsuario">Cadastrar Usuário</a></li>
+            <li><a href="preparandoAmbiente.html">Preparando Ambiente</a></li>
             <li><a href="login.html#/logarse">Logar-se</a></li>
+
           </ul>
         </div>
       </div>
-        <div style="margin-top: 40px;">
-        <p style="text-align: center;">
-                <img src="img/foto2.png" style="width: 450px;" />
-        </p>
-        </div>
+
+
+        <div >
+            <div class="jumbotron8">
+            <h3 style="text-align: center;">Listar Usuários</h3>
+            {{message}}
+            <hr/>
+            <h4 style="text-align: left;">Filtro de Busca:</h4>
+            <input class="form-control" type="text" ng-model="criterioDeBusca" placeholder="O que você está buscando?"/><br />
+
+
+                      <div ng-view></div>
+
+
+              <hr/>
+
+          </div>
+
         <div class="primary-footer">
           <div class="footer-wrap">
             <div class="footer">
@@ -59,5 +75,6 @@
           </div>
 
         </div>
+
     </body>
 </html>
