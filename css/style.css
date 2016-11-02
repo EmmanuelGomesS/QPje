@@ -1,7 +1,174 @@
+/*-------------------------------------------------
+GLOBALS CLASSES
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body{font-family: 'Droid Serif', serif; font-size:14px; color:#1a202c; background:#ffffff;}
+img{border:none;}
+h1{ font-size:18px; color:#d13f31; font-family: 'Oswald', sans-serif; font-weight:normal; text-transform:uppercase;}
+h2{ font-size:14px; color:#1f7872; font-family: 'Droid Serif', serif; font-weight:normal;}
+P{ line-height:20px;}
+a{text-decoration:none; color:#1f7872;}
+a:hover{color:#d13f31;}
+/*-------------------------------------------------
+GENERAL CLASSES
+-------------------------------------------------*/
+.mar-top30{margin-top:30px;}
+.mar-top20{margin-top:20px;}
+.mar-right30{margin-right:30px;}
+.mar-bottom20{margin-bottom:20px;}
+.float-left{ float:left;}
+.float-right{ float:right;}
+.clearing { clear:both;}
+.panel{ background:#ffffff;}
+.title{margin-left: 680px;}
+.content{}
+.button a{text-decoration:none; display:block; width:70px; height:30px; background:#1f7872; color:#ffffff; font-family: 'Oswald', sans-serif; line-height:30px; text-align:center; text-transform:uppercase;}
+.button a:hover{ background:#d13f31;}
+.page{ width:960px; margin:0 auto;overflow:hidden;}
+.page2{ width:900px; margin:0 auto;overflow:hidden;}
+.page3{ width:900px; margin:0 auto;overflow:hidden;}
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+.menu-wrap{ overflow:hidden; background:#1a202c;}
+.menu{margin:0 auto; width:881px; background:#d13f31; height:60px; margin-top:80px;}
+.menu ul li{list-style:none; float:left; width:auto;}
+.menu ul li a{ display:block; height:60px; line-height:60px; padding-left:30px; padding-right:30px; font-size:14px; font-family: 'Oswald', sans-serif; color:#ffffff; border-right:#dd503f solid 1px; text-transform:uppercase;}
+.menu ul li a:hover{background:#e1ece7; color:#1a202c;}
+.menu ul li a:active{background:#e1ece7; color:#1a202c;}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header{margin:0 auto; width:960px; height:120px;}
+.logo{width:300px; float:left; line-height:120px;}
+.logo h1{ font-size:32px; color:#d13f31; font-weight:normal;}
+.logo h1 span{ color:#1a202c;}
+
+.social{ float:right; margin-top:45px;}
+.social ul li{list-style:none; float:left; margin-left:15px;}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner{width:960px; height:340px; margin:0 auto; margin-bottom:60px; background:url(../images/banner-image.jpg) no-repeat; position:relative;}
+.banner h1{ padding:10px; float:right; background:#1a202c; text-transform:uppercase; color:#ffffff;  font-size:30px; font-weight:normal; position:absolute; top:130px; right:0;}
+.banner h2{ padding:10px; float:right; background:#ffffff; text-transform:uppercase; color:#1a202c;  font-size:22px; font-weight:normal; font-family: 'Oswald', sans-serif;position:absolute; top:195px; right:0;}
+/*-------------------------------------------------
+MAIN COLUMAS CLASSES
+-------------------------------------------------*/
+.primary-col{ width:918px; overflow:hidden; float:left;}
+.primary-col p{ padding-bottom:20px;}
+.generic{ float:left; overflow:hidden; width:100%;}
+.generic .panel{ }
+.generic .title h1{ padding-bottom:20px;}
+.generic .content{overflow:hidden;}
+.generic .content h2{ padding-bottom:15px;}
+.block{width:310px;}
+.block .panel{padding:50px 30px 30px 30px;}
+.block .title h1{ padding-bottom:20px;}
+.block .content img{ padding-bottom:20px;}
+.block .content h2{ padding-bottom:10px;}
+.block .content p{ padding-bottom:20px;}
+
+/*-------------------------------------------------
+SIDE BAR CLASSES
+-------------------------------------------------*/
+.side-bar{ width:280px; overflow:hidden; float:right;}
+.search{background:#d13f31; padding:25px 20px 25px 20px; overflow:hidden;}
+.search .title h1{ color:#fff; padding-bottom:20px;}
+.search ul li{list-style:none; float:left; list-style:none;}
+.textfiled{ background:#fff; width:200px; height:36px;  text-indent:5px; border: none;}
+.side-bar .panel{ padding:40px 20px 25px 20px; overflow:hidden;}
+.side-bar .panel .title{padding-bottom:25px;}
+.side-bar .panel .title span{float:center; padding-right:12px;}
+.side-bar .content ul li{list-style:none; border-bottom:#e2e6e9 solid 1px;color:#9b9e9a;line-height:30px;}
+.side-bar .content ul li.-no-border-bottom{border-bottom:none;}
+.side-bar .content ul li a{ text-decoration:none;color:#9b9e9a;}
+.side-bar .content ul li a:hover{ text-decoration:none; color:#d13f31;}
+.side-bar .content img{float:left;}
+.side-bar .content .recentPost{ float:right; width:130px; line-height:18px;}
+.side-bar .content .recentPost a{ text-decoration:none; color:#1f7872; float:left; padding-top:20px;}
+.side-bar .content .recentPost a:hover{ color:#d13f31;}
+
+/*-------------------------------------------------
+CONTACT FORM CLASSS
+-------------------------------------------------*/
+
+.contact-form { background:#E6E6FA; padding:30px; width:440px; float:center; align-self: center;margin-left:180px;border:#696969 2px solid;}
+.contact-form label {display: block; padding:10px 0 10px 0;float:center;}
+.contact-form label span {display: block; color:#939191;font-size:14px; float:center; width:80px; text-align:center; padding:5px 20px 0 0;}
+.contact-form .input_text {padding:10px 10px;width:318px;background:#ffffff;border:#696969 1px solid; color:#696969;}
+.contact-form .message{padding:10px 10px;width:318px; background:#ffffff; border:#e1ece7 1px solid;overflow:hidden;height:150px; color:#939191; font-size:14px;}
+.contact-form .button{padding:8px;background:#1f7872; color:#ffffff; text-transform:uppercase; font-family:'Oswald', sans-serif;border:0px solid;margin-left:100px;margin-top:20px;}
+
+.address { float:left; width:370px; margin-left:30px;}
+.address .panel { border:none; color:#9b9e9a}
+.address .panel .title h1 {  color:#d13f31; padding-bottom:10px;}
+.address .panel .content p span { color:#9b9e9a;}
+
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.primary-footer{ overflow:hidden; margin:0 auto;}
+.footer-wrap{ background:#1a202c; overflow:hidden; padding-top:50px; margin-top:50px; padding-bottom:50px;}
+.footer{width:960px; margin:0 auto;}
+.footer .panel{float:center; background:none; width:300px;}
+.footer .panel .title h1{ color:#ffffff;}
+.footer .panel .content{padding-top:25px;}
+.footer .panel .content p{ color:#435059;}
+.footer .panel .content .button a{ margin-top:30px; background:#d13f31; width:70px; height:30px;}
+.footer .panel .content .button a:hover{ margin-top:30px; background:#1f7872;}
+.footer .panel .content ul li{ list-style:url(../images/arrow.png) inside; border-bottom:#273042 solid 1px; line-height:35px;}
+.footer .panel .content ul li a{text-decoration:none; color:#435059;}
+.footer .panel .content ul li a:hover{color:#d13f31;}
+.footer .panel .content ul li.-no-border-bottom{border-bottom:none;}
+.copyright-wrap{ background:#1f7872; overflow:hidden; padding:40px 0px 40px 0px;}
+.copyright-wrap .panel{width:960px; margin:0 auto; background:none;}
+.copyright-wrap .panel .content p{ color:#ffffff; text-align:center; font-size:12px;}
+.copyright-wrap .panel .content p a{ text-decoration:none; color:#ffffff;}
+.copyright-wrap .panel .content p a:hover{ color:#1a202c;}
+
+
+.footer0 {
+  margin-top: 250px;
+  padding-top: 10px;
+  margin-left: -5px;
+  color: #777;
+  width: 800px;
+  border-top: 1px solid;
+}
 .footer {
-  margin-top: 31px;
+  margin-top: 25px;
+  margin-left: 277px;
   padding-top: 10px;
   color: #777;
+  width: 800px;
+  border-top: 1px solid;
+}
+.footer2 {
+  margin-top: 10px;
+  margin-left: 277px;
+  padding-top: 15px;
+  color: #777;
+  width: 800px;
+  border-top: 1px solid;
+}
+.footer3 {
+  margin-top: 500px;
+  margin-left: 277px;
+  padding-top: 10px;
+  color: #777;
+  width: 800px;
+  border-top: 1px solid;
+}
+.footer4 {
+  margin-top: 30px;
+  margin-left: 277px;
+  padding-top: 10px;
+  color: #777;
+  width: 800px;
   border-top: 1px solid;
 }
 .container{
@@ -9,7 +176,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 800px;
-  height: 545px;
+  height: 555px;
   border-radius: 10px;
 }
 .container2{
@@ -22,32 +189,222 @@
   border-radius: 10px;
 }
 .container3{
-  background-color: #8CD9EE;
-  margin-top: 5px;
+  background-color: white;
+  margin-top: 30px;
   margin-bottom: 10px;
-  margin-left: 282px;
-  width: 800px;
+  margin-left: 1100px;
+  width: 100px;
   height: 15px;
   border-radius: 10px;
 }
 .container4{
-  background-color: #8CD9EE;
-  margin-top: 5px;
+  background-color: white;
+  margin-top: 20px;
   margin-bottom: 10px;
-  margin-left: 278px;
-  width: 800px;
+  margin-left: 280px;
+  width: 100px;
   height: 38px;
+  border-radius: 10px;
+}
+.container5{
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  width: 80px;
+  height: 20px;
   border-radius: 10px;
 }
 .form-control{
   margin-bottom: 5px;
+  border-radius: 10px;
+  width: 600px
+}
+.form-controlO{
+  margin-bottom: 5px;
+  border-radius: 10px;
+  width: 300px
+}
+.form-login{
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 .jumbotron{
   width: 800px;
   background-color: #8CD9EE;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 277px;
   padding: 5px;
   border-radius: 10px;
 }
+.jumbotron2{
+  width: 870px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 240px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+}
+.jumbotron3{
+  width: 610px;
+  height: 600px;
+  background-color: #8CD9EE;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 277px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.jumbotron4{
+  width: 610px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 380px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+
+}
+.jumbotron5{
+  width: 610px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 375px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+
+}
+.jumbotron6{
+  width: 610px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 380px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+
+}
+.jumbotron7{
+  width: 610px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 380px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+
+}
+.jumbotron8{
+  width: 610px;
+  height: auto;
+  background:#ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 380px;
+  padding: 5px;
+  border-radius: 0px;
+  margin-bottom: 50px;
+
+  }
+
+#center{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+}
+
+.table{
+  margin-top: 20px;
+}
+/* --------------TABLE ONE ATTRIBUTES-----------------  */
+table.one {
+margin-bottom: 3em;
+border-collapse:collapse;
+display: inline-block;
+margin-right: 3em;
+
+}
+
+
+table.one td {
+text-align: center;
+width: 400px;
+height: 80px;
+padding: 1em;
+
+}
+
+
+table.one th {
+text-align: center;
+padding: 1em;
+background-color: #e8503a;
+color: white;		}
+
+table.one tr {
+height: 1em;
+
+}
+
+table.one tr:nth-child(even) {
+  background-color: #fff;		}
+
+table.one tr:nth-child(odd) {
+background-color:#E0E0E0;		}
+
+
+table.one2 {
+margin-bottom: 3em;
+border-collapse:collapse;
+display: inline-block;
+margin-right: 0em;
+
+}
+
+
+table.one2 td {
+text-align: center;
+width: 400px;
+height: 80px;
+padding: 1em;
+
+}
+
+
+table.one2 th {
+text-align: center;
+padding: 1em;
+background-color: #e8503a;
+color: white;   }
+
+table.one2 tr {
+height: 1em;
+
+}
+
+table.one2 tr:nth-child(even) {
+  background-color: #fff;   }
+
+table.one2 tr:nth-child(odd) {
+background-color:#E0E0E0;   }

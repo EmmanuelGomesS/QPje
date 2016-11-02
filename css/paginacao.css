@@ -1,0 +1,794 @@
+/**!
+ * Lista Paginação v4.1.0 Css
+ *
+ * @copyright Copyright 2013 AnimaKong.
+ * @author    Widx / Kunk.
+ * @link      animakong.net
+ *
+ */
+
+a {
+  text-decoration: none;
+}
+
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  display: table;
+  padding: 5px;
+  float: left;
+}
+
+#buscar-lista-anime input {
+  padding: 6px;
+  border: 1px solid #AD9C84;
+  border-radius: 2px;
+  color: #AD9C84;
+  width: 500px;
+  height: 17px;
+  background: rgba(236, 235, 234, 0.6);
+}
+
+.busrcar-lista-li {
+  float: left;
+  width: 180px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.controls {
+  background: none repeat scroll 0 0 #fff;
+  color: #eee;
+  width: 670px;
+  height: 110px;
+  padding-bottom: 8px;
+  margin-left: -11px;
+  margin-top: -8px;
+  position: absolute;
+}
+
+.button-all {
+  background: #F0F0F0;
+  border: 0 none;
+  color: #AEAEAE;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-size: 17px;
+  margin: 3px;
+  line-height: 1.84;
+  text-align: center;
+  width: 117px;
+  font-family: oswald;
+}
+
+.button-all:hover {
+  background: #BEBEBE;
+  color: #fff;
+}
+
+.button-all.active {
+  background: #AEAEAE;
+  color: #FFF;
+}
+
+.button:hover {
+  background: #aeaeae;
+  color: #FFF;
+}
+
+.button {
+  border: 0 none;
+  background: #f0f0f0;
+  color: #aeaeae;
+  font-size: 25px;
+  width: 23px;
+  height: 44px;
+  float: left;
+  border-left: 1px solid #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: oswald;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.letras-l {
+  height: 60px;
+}
+
+.ma-all {
+  background: #3E3E3E;
+  margin-left: 0px;
+  margin-top: -6px;
+  width: 30px;
+  font-family: 'Rubik One', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 6px;
+  text-transform: uppercase;
+  float: left;
+  list-style: none;
+  height: 24px;
+  font-size: 15px;
+}
+
+.button-filme {
+  background: #D0D0D0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  height: 24px;
+  position: absolute;
+  margin: 3px;
+  padding-top: 6px;
+  margin-top: 40px;
+  margin-left: -103px;
+  text-align: center;
+  width: 100px;
+  font-family: 'Rubik One', sans-serif;
+}
+
+label {
+  font-weight: 300;
+  margin: 0 0.4em 0 0;
+}
+
+.button.active {
+  background: #B3B9BB;
+  color: #fff;
+}
+
+.button:focus {
+  outline: 0 none;
+}
+
+.button + label {
+  margin-left: 1em;
+}
+
+.ano {
+  background: #F0F0F0;
+  margin-left: -91px;
+  width: 85px;
+  font-family: oswald;
+  color: #AEAEAE;
+  padding-left: 8px;
+  cursor: pointer;
+  padding-top: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 18px;
+}
+
+.gen {
+  background: #F0F0F0;
+  margin-left: -91px;
+  width: 79px;
+  font-family: oswald;
+  color: #AEAEAE;
+  padding-left: 8px;
+  cursor: pointer;
+  padding-top: 6px;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 18px;
+}
+
+.ma-gen {
+  background: #3E3E3E;
+  margin-left: -121px;
+  margin-top: -30px;
+  width: 30px;
+  font-family: 'Rubik One', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 6px;
+  text-transform: uppercase;
+  list-style: none;
+  height: 24px;
+  font-size: 15px;
+}
+
+.genero-linha {
+  position: absolute;
+  list-style: none;
+  margin-left: 210px;
+  padding: 2px;
+}
+
+.ano-linha {
+  position: absolute;
+  list-style: none;
+  margin-left: 298px;
+  padding: 2px;
+}
+
+.play-li {
+  background: rgba(255, 255, 255, 0.23);
+  width: 145.422px;
+  height: 200px;
+  position: absolute;
+  z-index: 99;
+  border-bottom: 2px solid #5784A2;
+  margin-left: 0px;
+  opacity: 0;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.play-li:hover {
+  opacity: 0.8;
+}
+
+button {
+  background: none repeat scroll 0 0 #f5a01b;
+  border: 0 none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  height: 24px;
+  margin: 3px;
+  text-align: center;
+  width: 146px;
+}
+
+button.active {
+  background: none repeat scroll 0 0 #313131;
+}
+
+button:focus {
+  outline: 0 none;
+}
+
+button + label {
+  margin-left: 1em;
+}
+
+.genero-titulos {
+  height: 10px;
+  padding: 5px 10px;
+  line-height: 10px;
+  width: 100%;
+  position: static;
+  cursor: pointer;
+  overflow: hidden;
+  letter-spacing: -.75px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+  font-family: 'Rubik One', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: .4;
+  color: #919191;
+}
+
+.icon-caret-down {
+  position: absolute;
+  margin-top: -9px;
+  font-size: 25px;
+  margin-left: 60px;
+  color: #A6A4A4;
+}
+
+.bxranm {
+  font-size: 15px;
+  position: absolute;
+  z-index: 20;
+  background: #566771;
+  font-family: oswald;
+  color: #fff;
+  padding: 8px;
+  border-radius: 3px;
+  margin-top: 220px;
+  margin-left: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  font-size: 0.1px;
+}
+
+.container:after {
+  content: '';
+  display: inline-block;
+  margin: 0 6px 6px 6px;
+}
+
+.container .mix,
+.container .gap {
+  display: inline-block;
+}
+
+.container .mix {
+  text-align: left;
+  margin-bottom: 2px;
+  display: none;
+}
+
+.container .mix.category-1 {
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2 {
+  border-top: 2px solid yellow;
+}
+
+.title {
+  margin: 2px 0px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #424242;
+  font-family: Viga, sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+}
+
+.icon-plus {
+  position: absolute;
+  margin-left: 11px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.icon-reorder {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.ass-icon {
+  transition: all 0.15s ease-in;
+  background-color: #729FBB;
+  color: rgba(255, 255, 255, 0);
+  font-weight: 400;
+  padding: 6px;
+  padding-left: 10px;
+  font-family: viga;
+  width: 23px;
+  position: absolute;
+  border-radius: 3px;
+  height: 19px;
+  font-size: 14px;
+  margin-top: -232px;
+  margin-left: 3px;
+}
+
+.ass-icon:hover {
+  background-color: #4A718C;
+}
+
+@media all and (min-width: 420px) {
+  .container .mix,
+  .container .gap {}
+}
+
+@media all and (min-width: 640px) {
+  .container .mix,
+  .container .gap {}
+}
+
+.pager-list {}
+
+.page-number {
+  color: #C9C9C9;
+  cursor: pointer;
+  font-family: oswald;
+  padding: 8px 4px;
+}
+
+.page-prev {
+  color: #C9C9C9;
+  cursor: pointer;
+  font-family: oswald;
+  padding: 8px 10px;
+}
+
+.page-next {
+  color: #C9C9C9;
+  cursor: pointer;
+  font-family: oswald;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.page-number:hover {
+  color: #BFBFBF;
+}
+
+.page-number.active {
+  color: #BFBFBF;
+}
+
+.buscador_listagem {
+  background: none repeat scroll 0 0 #313131;
+  margin-top: -30px;
+  width: 182px;
+  padding: 4px;
+  margin-left: 520px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.anime_list {
+  margin: 10px 4px;
+  position: relative;
+  width: 646px;
+  margin-left: 1px;
+  margin-top: 10px;
+  height: 250px;
+  border: 1px solid #f0f0f0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 2px 1px rgba(64, 73, 97, 0.3);
+  box-shadow: 0 0 2px 1px rgba(64, 73, 97, 0.3);
+  cursor: pointer;
+}
+
+.clas-lvr {
+  font-size: 15px;
+  position: absolute;
+  background: #6AB36C;
+  padding: 18px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.clas-10 {
+  font-size: 15px;
+  position: absolute;
+  background: #30D6F0;
+  padding: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.clas-12 {
+  font-size: 15px;
+  position: absolute;
+  background: #EED524;
+  padding: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.clas-14 {
+  font-size: 15px;
+  position: absolute;
+  background: #FB9023;
+  padding: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.clas-16 {
+  font-size: 15px;
+  position: absolute;
+  background: #F41313;
+  padding: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.clas-18 {
+  font-size: 15px;
+  position: absolute;
+  background: #232323;
+  padding: 15px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 3px;
+  font-family: 'Rubik One', sans-serif;
+  margin-top: -20px;
+  margin-left: 590px;
+  z-index: 10;
+  color: #fff;
+}
+
+.box {
+  display: block;
+}
+
+.screen_anime img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: url(http://i.imgur.com/tiQHtFM.gif) no-repeat center;
+}
+
+.thumb_skin {
+  width: 30%;
+  position: relative;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+label {
+  font-weight: 300;
+  margin: 0 0.4em 0 0;
+  color: #C60;
+}
+
+.comments {
+  display: none;
+}
+
+.filtroaba {
+  display: -moz-box;
+}
+
+.box_genero {
+  width: 80px;
+  float: left;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 11px;
+  margin-right: 3px;
+}
+
+div#maisinfo {
+  color: #000;
+  font-family: 'Yanone Kaffeesatz';
+  width: 192px;
+  height: 170px;
+  margin-left: 130px;
+  margin-top: 38px;
+  position: absolute;
+  background: #F0F0F0;
+  border-radius: 3px;
+  z-index: 200;
+  overflow: overlay;
+  float: left;
+}
+
+div#infoano {
+  color: #000;
+  font-family: 'Yanone Kaffeesatz';
+  width: 192px;
+  height: 170px;
+  margin-left: 216px;
+  margin-top: 38px;
+  position: absolute;
+  background: #F0F0F0;
+  border-radius: 3px;
+  z-index: 200;
+  overflow: overlay;
+  float: left;
+}
+
+#infoano::-webkit-scrollbar-thumb {
+  background-color: #C4C8C9;
+  border-radius: 4px;
+}
+
+#infoano::-webkit-scrollbar {
+  background-color: #E4E2E2;
+  width: 7px;
+}
+
+#maisinfo::-webkit-scrollbar-thumb {
+  background-color: #C4C8C9;
+  border-radius: 4px;
+}
+
+#maisinfo::-webkit-scrollbar {
+  background-color: #E4E2E2;
+  width: 7px;
+}
+
+.text-pageleg {
+  background: #3d3d3d;
+  border: 1px solid rgb(0, 0, 0);
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-variant: small-caps;
+  margin-bottom: 4px;
+  margin-left: 3px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  width: 126px;
+}
+
+.fundo-cattegoria {
+  background: none repeat scroll 0 0 rgb(238, 238, 238);
+  border: 1px solid rgb(204, 204, 204);
+  float: left;
+  height: 37px;
+  margin-bottom: 8px;
+  margin-left: 3px;
+  margin-top: 11px;
+  padding: 5px;
+  width: 599px;
+}
+
+.toggle-leg {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(146, 146, 146);
+  text-align: center;
+  margin-left: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  background: none repeat scroll 0% 0% rgb(238, 238, 238);
+  border-radius: 3px;
+  padding: 9px 20px;
+  text-decoration: none;
+}
+
+.toggle-leg:hover {
+  text-decoration: none;
+  color: rgb(146, 146, 146);
+}
+
+.toggle-legdiv {
+  float: left;
+  width: 141px;
+  height: 35px;
+  margin-top: 7px;
+}
+
+.toggle-legcat {
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 3px;
+  padding: 5px;
+  width: 599px;
+}
+
+.search {
+  border: solid 1px #5093A0;
+  border-radius: 5px;
+  padding: 6.9px 14px;
+  height: 18px;
+  font-family: oswald;
+  font-size: 11px;
+  margin-bottom: 45px;
+  margin-top: 20px;
+  margin-left: -8px;
+  width: 960px;
+  color: #788190;
+  background: #EAEAEA;
+  margin-right: -3px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #62ACBB;
+}
+
+.sort {
+  padding: 6.2px 13px;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #4C8A46;
+  width: 160px;
+  text-decoration: none;
+  background-color: #57A050;
+  font-family: viga;
+  float: initial;
+  font-size: 13px;
+  height: auto;
+  margin-top: 2px;
+  margin-left: -7px;
+}
+
+.sort:hover {
+  text-decoration: none;
+  background-color: #4C8A46;
+}
+
+.sort:focus {
+  outline: none;
+}
+
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: 12px;
+  right: -5px;
+}
+
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: -11px;
+  right: -5px;
+}
+
+.sinops-anime {
+  overflow: overlay;
+  margin: 2px 0px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #424242;
+  font-family: Viga, sans-serif;
+  padding: 8px;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  height: 80px;
+}
+
+.sinops-anime::-webkit-scrollbar-thumb {
+  background: #999;
+}
+
+.sinops-anime::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: #EEE;
+}
